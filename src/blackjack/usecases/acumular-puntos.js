@@ -12,7 +12,6 @@ const puntosHTML = document.querySelectorAll('small');
 export const acumularPuntos = (carta, turno, puntosJugadores) => {
 
     if (!carta) throw new Error('La carta es necesaria');
-    if (!turno) throw new Error('El turno es necesario');
     if (!puntosJugadores || puntosJugadores.length === 0) throw new Error('Los puntosJugadores son necesarios');
 
     puntosJugadores[turno] = puntosJugadores[turno] + valorCarta(carta);
